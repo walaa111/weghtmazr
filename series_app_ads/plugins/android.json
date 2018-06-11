@@ -1,0 +1,28 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "admob": {
+      "PACKAGE_NAME": "com.realdealagency.weghtmazr"
+    },
+    "cordova-plugin-admob-simple": {
+      "PACKAGE_NAME": "com.realdealagency.weghtmazr"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.realdealagency.weghtmazr"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.realdealagency.weghtmazr"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-admob-sdklibs": {
+      "PACKAGE_NAME": "com.realdealagency.weghtmazr"
+    }
+  }
+}
