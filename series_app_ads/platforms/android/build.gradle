@@ -18,13 +18,16 @@
 */
 
 apply plugin: 'com.android.application'
-
+android {
+    configurations.all {
+        resolutionStrategy.force 'com.android.support:support-v4:27.1.0'
+    }
+}
 buildscript {
     repositories {
         jcenter()
         maven {
             url "https://maven.google.com"
-            
         }
     }
 
@@ -39,13 +42,12 @@ buildscript {
 
 // Allow plugins to declare Maven dependencies via build-extras.gradle.
 allprojects {
-repositories {
-mavenCentral();
-jcenter()
-maven {
-url "https://maven.google.com"
-}
-}
+    repositories {
+        jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
+    }
 }
 
 task wrapper(type: Wrapper) {
